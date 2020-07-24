@@ -1,5 +1,4 @@
 # Memeful
-Kotlin
 
 # Technology Used : 
 Application Development -  Kotlin
