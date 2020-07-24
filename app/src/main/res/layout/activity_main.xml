@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MostViralActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mostViral_Recylerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/progress_layout" />
+
+        <TextView
+            android:id="@+id/no_data_available_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_data_available"
+            android:textSize="@dimen/sp_30"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/white"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>
